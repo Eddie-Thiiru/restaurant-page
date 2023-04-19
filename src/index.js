@@ -1,6 +1,6 @@
-import initialPage from "./initial.js";
+import { homePage } from "./initial.js";
 
 function component() {
-  initialPage();
+  homePage();
 }
 component();
