@@ -17,4 +17,4 @@ const initialPage = () => {
   container.appendChild(para);
 };
 
-export { initialPage };
+export default initialPage;

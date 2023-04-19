@@ -1,4 +1,4 @@
-import { initialPage } from "./initial.js";
+import initialPage from "./initial.js";
 
 function component() {
   initialPage();
