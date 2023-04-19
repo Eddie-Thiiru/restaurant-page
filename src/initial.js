@@ -1,7 +1,7 @@
-import { homeBtn } from "./home";
 import { menuBtn } from "./menu";
 import { contactBtn } from "./contact";
 import Img from "./restaurant.jpg";
+import "./styles.css";
 
 const container = document.querySelector(".content");
 
@@ -9,16 +9,20 @@ const headerSection = () => {
   const header = document.createElement("div");
   const nav = document.createElement("div");
   const heading = document.createElement("h1");
+  const btn = document.createElement("button");
 
   header.classList.add("header-section");
   nav.classList.add("nav");
   heading.textContent = "Tasty Good Kitchen";
+  btn.classList.add("home-button");
+  btn.textContent = "Home";
+  btn.type = "button";
 
   header.appendChild(heading);
+  nav.appendChild(btn);
   header.appendChild(nav);
   container.appendChild(header);
 
-  homeBtn();
   menuBtn();
   contactBtn();
 };

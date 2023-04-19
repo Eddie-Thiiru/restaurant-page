@@ -1,3 +1,5 @@
+import "./styles.css";
+
 const contactBtn = () => {
   const nav = document.querySelector(".nav");
   const btn = document.createElement("button");
@@ -9,4 +11,6 @@ const contactBtn = () => {
   nav.appendChild(btn);
 };
 
-export { contactBtn };
+const contactPage = () => {};
+
+export { contactBtn, contactPage };

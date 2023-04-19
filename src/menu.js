@@ -1,3 +1,5 @@
+import "./styles.css";
+
 const menuBtn = () => {
   const nav = document.querySelector(".nav");
   const btn = document.createElement("button");
@@ -9,4 +11,6 @@ const menuBtn = () => {
   nav.appendChild(btn);
 };
 
-export { menuBtn };
+const menuPage = () => {};
+
+export { menuBtn, menuPage };
