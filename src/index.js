@@ -1,5 +1,6 @@
 import { headerSection, homePage } from "./initial.js";
 import { menuPage } from "./menu.js";
+import { contactPage } from "./contact.js";
 
 function component() {
   headerSection();
@@ -14,7 +15,7 @@ function component() {
       } else if (button.textContent === "Menu") {
         menuPage();
       } else {
-        console.log("contact");
+        contactPage();
       }
     })
   );

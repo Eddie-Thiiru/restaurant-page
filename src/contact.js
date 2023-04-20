@@ -1,3 +1,4 @@
+import Img from "./images/grilling-steak.jpg";
 import "./styles.css";
 
 const contactBtn = () => {
@@ -11,6 +12,16 @@ const contactBtn = () => {
   nav.appendChild(btn);
 };
 
-const contactPage = () => {};
+const contactPage = () => {
+  const page = document.querySelector(".main-section");
+  const img = new Image();
+
+  img.classList.add("grilling-steak");
+  img.src = Img;
+  img.alt = "A steak on a flaming grill ";
+
+  page.textContent = "";
+  page.appendChild(img);
+};
 
 export { contactBtn, contactPage };
