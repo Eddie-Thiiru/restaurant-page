@@ -18,6 +18,8 @@ const menuBtn = () => {
 };
 
 const menuPage = () => {
+  const page = document.querySelector(".main-section");
+
   const assorted = new Image();
   const ribs = new Image();
   const steak = new Image();
@@ -45,6 +47,15 @@ const menuPage = () => {
   pork.alt = "A pork steak on a plate";
   burger.alt = "A double patty cheeseburger";
   fish.alt = "Roasted fish and vegetables on a plate";
+
+  // Empty current page and replace with new child elements
+  page.textContent = "";
+  page.appendChild(assorted);
+  page.appendChild(ribs);
+  page.appendChild(steak);
+  page.appendChild(pork);
+  page.appendChild(burger);
+  page.appendChild(fish);
 };
 
 export { menuBtn, menuPage };
