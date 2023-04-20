@@ -19,3 +19,7 @@ body {
 .home-image {
   width: 800px;
 }
+
+img {
+  width: 300px;
+}
