@@ -20,6 +20,10 @@ body {
   width: 1000px;
 }
 
+.assorted-meats > img {
+  rotate: -90deg;
+}
+
 img {
   width: 300px;
 }

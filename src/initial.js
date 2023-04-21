@@ -13,13 +13,13 @@ const headerSection = () => {
 
   header.classList.add("header-section");
   nav.classList.add("nav");
-  heading.textContent = "Tasty Good Kitchen";
   btn.classList.add("home-button");
-  btn.textContent = "Home";
   btn.type = "button";
+  btn.textContent = "Home";
+  heading.textContent = "Tasty Good Kitchen";
 
-  header.appendChild(heading);
   nav.appendChild(btn);
+  header.appendChild(heading);
   header.appendChild(nav);
   container.appendChild(header);
 
@@ -33,11 +33,11 @@ const homePage = () => {
   const img = new Image();
 
   page.classList.add("main-section");
-  para.textContent =
-    "Tasty Good Kitchen is proud to introduce Austin's premier Josper oven experience. Our menu showcases live-fire cooking with Latin flare. Subterra Agave Bar is our dimly-lit cocktail lounge, located downstairs from Ember. It features craft Agave cocktails and a wide selection of Latin spirits.";
   img.classList.add("home-image");
   img.src = Img;
   img.alt = "A man cooking a tomahawk on a flaming grill ";
+  para.textContent =
+    "Tasty Good Kitchen is proud to introduce Austin's premier Josper oven experience. Our menu showcases live-fire cooking with Latin flare. Subterra Agave Bar is our dimly-lit cocktail lounge, located downstairs from Ember. It features craft Agave cocktails and a wide selection of Latin spirits.";
 
   page.appendChild(img);
   page.appendChild(para);
@@ -53,11 +53,11 @@ const homePageUpdate = () => {
   const img = new Image();
 
   page.classList.add("main-section");
-  para.textContent =
-    "Tasty Good Kitchen is proud to introduce Austin's premier Josper oven experience. Our menu showcases live-fire cooking with Latin flare. Subterra Agave Bar is our dimly-lit cocktail lounge, located downstairs from Ember. It features craft Agave cocktails and a wide selection of Latin spirits.";
   img.classList.add("home-image");
   img.src = Img;
   img.alt = "A man cooking a tomahawk on a flaming grill ";
+  para.textContent =
+    "Tasty Good Kitchen is proud to introduce Austin's premier Josper oven experience. Our menu showcases live-fire cooking with Latin flare. Subterra Agave Bar is our dimly-lit cocktail lounge, located downstairs from Ember. It features craft Agave cocktails and a wide selection of Latin spirits.";
 
   page.appendChild(img);
   page.appendChild(para);
