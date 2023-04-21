@@ -31,10 +31,13 @@ const contactPage = () => {
   img.classList.add("grilling-steak");
   img.src = Img;
   img.alt = "A steak on a flaming grill ";
-  heading1.textContent = "Location";
-  heading2.textContent = "Hours";
-  para1.textContent = "testing 1 2 3";
-  para2.textContent = "testing 1 2 3";
+  heading1.textContent = "ADDRESS";
+  heading2.textContent = "HOURS";
+  para1.textContent = "PitMaster St \r\nGrilled, N Smoked \r\n(100) 200-fake";
+  para2.textContent =
+    "Wed-Thur: 11:00am - 9:00pm \r\nFri-Sun: 3:00pm - 11-00pm \r\nMon: Closed";
+  para1.style = "white-space: pre";
+  para2.style = "white-space: pre";
 
   contactLocation.appendChild(heading1);
   contactLocation.appendChild(para1);
