@@ -33,11 +33,10 @@ const contactPage = () => {
   img.alt = "A steak on a flaming grill ";
   heading1.textContent = "ADDRESS";
   heading2.textContent = "HOURS";
-  para1.textContent = "PitMaster St \r\nGrilled, N Smoked \r\n(100) 200-fake";
-  para2.textContent =
-    "Wed-Thur: 11:00am - 9:00pm \r\nFri-Sun: 3:00pm - 11-00pm \r\nMon: Closed";
-  para1.style = "white-space: pre";
-  para2.style = "white-space: pre";
+  para1.innerHTML =
+    "PitMasters Street <br>Grilled, N Smoked <br>(100) 200-fake";
+  para2.innerHTML =
+    "Wed-Thur: 11:00am - 9:00pm <br>Fri-Sun: 3:00pm - 11-00pm <br>Mon: Closed";
 
   contactLocation.appendChild(heading1);
   contactLocation.appendChild(para1);

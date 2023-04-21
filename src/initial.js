@@ -8,18 +8,18 @@ const container = document.querySelector(".content");
 const headerSection = () => {
   const header = document.createElement("div");
   const nav = document.createElement("div");
-  const heading = document.createElement("h1");
+  const restaurant = document.createElement("h1");
   const btn = document.createElement("button");
 
-  header.classList.add("header-section");
+  restaurant.classList.add("header-section");
   nav.classList.add("nav");
   btn.classList.add("home-button");
   btn.type = "button";
   btn.textContent = "Home";
-  heading.textContent = "Tasty Good Kitchen";
+  restaurant.textContent = "Grill N Barbecue";
 
   nav.appendChild(btn);
-  header.appendChild(heading);
+  header.appendChild(restaurant);
   header.appendChild(nav);
   container.appendChild(header);
 
@@ -29,6 +29,7 @@ const headerSection = () => {
 
 const homePage = () => {
   const page = document.createElement("div");
+  const heading = document.createElement("h2");
   const para = document.createElement("P");
   const img = new Image();
 
@@ -36,9 +37,9 @@ const homePage = () => {
   img.classList.add("home-image");
   img.src = Img;
   img.alt = "A man cooking a tomahawk on a flaming grill ";
+  heading.textContent = "THE PEAK OF FLAVOR";
   para.textContent =
-    "Tasty Good Kitchen is proud to introduce Austin's premier Josper oven experience. Our menu showcases live-fire cooking with Latin flare. Subterra Agave Bar is our dimly-lit cocktail lounge, located downstairs from Ember. It features craft Agave cocktails and a wide selection of Latin spirits.";
-
+    "At Grill N Barbecue, step into a world of succulent meat mellowed to the peak of flavor, that fills your mouth with utmost satisfaction. Located at the PitMasters Street, We are honoured to serve the finest, most remarkable, out of this world grill and barbecue.";
   page.appendChild(img);
   page.appendChild(para);
   container.appendChild(page);
@@ -57,7 +58,7 @@ const homePageUpdate = () => {
   img.src = Img;
   img.alt = "A man cooking a tomahawk on a flaming grill ";
   para.textContent =
-    "Tasty Good Kitchen is proud to introduce Austin's premier Josper oven experience. Our menu showcases live-fire cooking with Latin flare. Subterra Agave Bar is our dimly-lit cocktail lounge, located downstairs from Ember. It features craft Agave cocktails and a wide selection of Latin spirits.";
+    "At Grill N Barbecue, step into a world of succulent meat mellowed to the peak of flavor, that fills your mouth with utmost satisfaction. Located at the PitMasters Street, We are honoured to serve the finest, most remarkable, out of this world grill and barbecue.";
 
   page.appendChild(img);
   page.appendChild(para);
