@@ -1,4 +1,5 @@
 .menu-page {
+  padding: 25px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: repeat(6, 1fr);
@@ -33,6 +34,6 @@
 }
 
 .menu-page > div > img {
-  width: 100%;
+  width: 80%;
   grid-row: 3 / 4;
 }
