@@ -1,10 +1,11 @@
-import { headerSection, homePage, homePageUpdate } from "./initial.js";
+import { headerSection, homePage, footer, homePageUpdate } from "./initial.js";
 import { menuPage } from "./menu.js";
 import { contactPage } from "./contact.js";
 
 function component() {
   headerSection();
   homePage();
+  footer();
 
   const buttons = document.querySelectorAll("button");
 

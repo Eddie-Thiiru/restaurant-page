@@ -1,0 +1,38 @@
+.menu-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 50px;
+  justify-items: center;
+}
+
+.assorted-meats {
+  grid-column: 1 / 4;
+  width: 80%;
+}
+
+.ribs,
+.steak,
+.pork,
+.burger,
+.fish {
+  grid-column: 2 / 3;
+}
+
+.menu-page > div {
+  display: grid;
+  grid-template-rows: 40px 100px 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.menu-page > div > p {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 80%;
+}
+
+.menu-page > div > img {
+  width: 100%;
+  grid-row: 3 / 4;
+}

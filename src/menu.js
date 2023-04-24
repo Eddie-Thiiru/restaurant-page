@@ -4,7 +4,8 @@ import Img3 from "./images/steak-puree.jpg";
 import Img4 from "./images/pork.jpg";
 import Img5 from "./images/cheeseburger.jpg";
 import Img6 from "./images/fish.jpg";
-import "./styles.css";
+import "./menupage.css";
+import "./mainstyles.css";
 
 const menuBtn = () => {
   const nav = document.querySelector(".nav");
@@ -18,11 +19,12 @@ const menuBtn = () => {
 };
 
 const menuPage = () => {
-  const page = document.querySelector(".main-section");
+  const pageContainer = document.querySelector(".main-section");
 
   // Empty current page and replace with new child elements
-  page.textContent = "";
+  pageContainer.textContent = "";
 
+  const page = document.createElement("div");
   const assorted = document.createElement("div");
   const ribs = document.createElement("div");
   const steak = document.createElement("div");
@@ -48,6 +50,7 @@ const menuPage = () => {
   const burgerImg = new Image();
   const fishImg = new Image();
 
+  page.classList.add("menu-page");
   assorted.classList.add("assorted-meats");
   ribs.classList.add("ribs");
   steak.classList.add("steak");
@@ -87,24 +90,24 @@ const menuPage = () => {
   burgerImg.alt = "A double patty cheeseburger";
   fishImg.alt = "Roasted fish and vegetables on a plate";
 
-  assorted.appendChild(assortedImg);
   assorted.appendChild(assortedHead);
   assorted.appendChild(assortedPara);
-  ribs.appendChild(ribsImg);
+  assorted.appendChild(assortedImg);
   ribs.appendChild(ribsHead);
   ribs.appendChild(ribsPara);
-  steak.appendChild(steakImg);
+  ribs.appendChild(ribsImg);
   steak.appendChild(steakHead);
   steak.appendChild(steakPara);
-  pork.appendChild(porkImg);
+  steak.appendChild(steakImg);
   pork.appendChild(porkHead);
   pork.appendChild(porkPara);
-  burger.appendChild(burgerImg);
+  pork.appendChild(porkImg);
   burger.appendChild(burgerHead);
   burger.appendChild(burgerPara);
-  fish.appendChild(fishImg);
+  burger.appendChild(burgerImg);
   fish.appendChild(fishHead);
   fish.appendChild(fishPara);
+  fish.appendChild(fishImg);
 
   page.appendChild(assorted);
   page.appendChild(ribs);
@@ -112,6 +115,7 @@ const menuPage = () => {
   page.appendChild(pork);
   page.appendChild(burger);
   page.appendChild(fish);
+  pageContainer.appendChild(page);
 };
 
 export { menuBtn, menuPage };
