@@ -59,10 +59,13 @@ const homePage = () => {
 
 const footer = () => {
   const footer = document.createElement("div");
+  const para = document.createElement("p");
 
   footer.classList.add("footer-section");
-  footer.textContent = "Copyright @ Grill N Barbecue 2023";
 
+  para.innerHTML = "Copyright @<span> Grill N Barbecue </span>2023";
+
+  footer.appendChild(para);
   container.appendChild(footer);
 };
 

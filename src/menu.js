@@ -64,7 +64,7 @@ const menuPage = () => {
   ribsHead.textContent = "RIBS";
   ribsPara.textContent =
     "Marinated beef ribs grilled and smoked on a charcoal grill to perfection.";
-  steakHead.textContent = "RIB-EYE STEAK + POTATO PUREE";
+  steakHead.textContent = "RIB EYE STEAK + POTATO PUREE";
   steakPara.textContent =
     "Cooked on a cast iron to medium rare with a fantastic crust and plated with potato puree and BBQ sauce.";
   porkHead.textContent = "PORK CHOP";
