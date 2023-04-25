@@ -1,7 +1,8 @@
 .contact-page {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 3fr 1fr;
+  grid-template-rows: 3fr minmax(200px, 1fr);
+  align-items: center;
 }
 
 .contact-page > img {
@@ -13,6 +14,7 @@
 .contact-description {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  color: #121214;
   display: grid;
   grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr);
   justify-items: center;
@@ -34,12 +36,18 @@
 }
 
 .contact-description > div > h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+.contact-description > div > p {
+  font-weight: bold;
+  color: #eff8fd;
 }
 
 .links > button {
   height: 60px;
   width: 60px;
+  background-color: #ccc0b3;
 }
 
 button > img {

@@ -22,7 +22,7 @@ const headerSection = () => {
   logo.alt = "Image of a grill";
   btn.type = "button";
   btn.textContent = "Home";
-  headline.textContent = "Grill N Barbecue";
+  headline.textContent = "Grill N' Barbecue";
 
   nav.appendChild(btn);
   header.appendChild(logo);
@@ -63,7 +63,7 @@ const footer = () => {
 
   footer.classList.add("footer-section");
 
-  para.innerHTML = "Copyright @<span> Grill N Barbecue </span>2023";
+  para.innerHTML = "Copyright @<span> Grill N' Barbecue </span>2023";
 
   footer.appendChild(para);
   container.appendChild(footer);

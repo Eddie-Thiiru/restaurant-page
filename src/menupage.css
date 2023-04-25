@@ -22,7 +22,7 @@
 
 .menu-page > div {
   display: grid;
-  grid-template-rows: 40px 100px 1fr;
+  grid-template-rows: 70px 150px 1fr;
   justify-items: center;
   text-align: center;
 }
