@@ -1,6 +1,8 @@
 # restaurant-page
 
-Restaurant page created with HTML, CSS and JS.
+Restaurant page created with HTML, CSS and JavaScript.
+
+[Live Demo](https://grillnbarbecue.netlify.app/) :point_left:
 
 Credits for the images in this page go to:
 
