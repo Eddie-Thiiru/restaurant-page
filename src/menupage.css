@@ -1,8 +1,8 @@
 .menu-page {
-  padding: 25px;
+  padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 1fr minmax(320px, 3fr) 1fr;
+  grid-template-rows: repeat(6, max-content);
   row-gap: 50px;
   justify-items: center;
 }
@@ -21,9 +21,12 @@
 }
 
 .menu-page > div {
+  width: 100%;
+  padding: 20px;
   display: grid;
-  grid-template-rows: 70px 150px 1fr;
+  grid-template-rows: max-content max-content 1fr;
   justify-items: center;
+  gap: 20px;
   text-align: center;
 }
 
