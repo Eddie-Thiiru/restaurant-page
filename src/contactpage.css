@@ -40,7 +40,7 @@
 }
 
 .contact-description > div > h2 {
-  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-size: clamp(1.25rem, 2vw, 2.5rem);
 }
 
 .contact-description > div > p {
@@ -56,4 +56,14 @@
 
 button > img {
   width: 100%;
+}
+
+@media (max-width: 450px) {
+  .links {
+    gap: 30px;
+  }
+  .links > button {
+    height: 40px;
+    width: 40px;
+  }
 }

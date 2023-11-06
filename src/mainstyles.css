@@ -85,7 +85,7 @@ span {
 h1 {
   color: #121214;
   font-family: "Sigmar", cursive;
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.25rem, 2vw, 2rem);
   display: inline-block;
   line-height: 1;
 }
@@ -107,4 +107,19 @@ h3 {
 .nav button:hover {
   border-bottom: 8px solid #c2b3a4;
   text-decoration: underline;
+}
+
+@media (max-width: 450px) {
+  .header-section {
+    gap: 5px;
+  }
+
+  button {
+    padding: 5px;
+  }
+
+  .logo {
+    height: 35px;
+    width: 35px;
+  }
 }
